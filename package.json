@@ -2,8 +2,10 @@
   "name": "purpleprojectlib",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server",
+    "build": "rollup -c --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
     "url": "https://github.com/morik196911/PurpleProjectLib/issues"
   },
   "homepage": "https://github.com/morik196911/PurpleProjectLib#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "eslint": "^9.29.0",
+    "globals": "^16.2.0",
+    "live-server": "^1.2.2",
+    "rollup": "^4.44.0",
+    "rollup-plugin-import-css": "^4.0.1"
+  }
 }
